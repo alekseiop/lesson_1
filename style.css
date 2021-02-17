@@ -32,7 +32,7 @@ h1 {
 }
 
 .header_list_item::before {
-    content: url(images/Vector.svg);
+    content: url(images/check.svg);
     margin-right: 5px;
 }
 
