@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap');
+
 * {
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato';
 }
 
 .container {
@@ -34,4 +40,42 @@
 
 .header__nav > img:not(:last-child) {
     margin-right: 20px;
+}
+
+.brand {
+    background-color: #F1E4E6;
+}
+
+.brand__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -230px;
+}
+.brand__descr {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin-left: 60px;
+}
+
+.brand__header {
+    font-size: 48px;
+    line-height: 58px;
+    color: #222222;
+    font-weight: 900;
+}
+
+.brand__heading {
+    margin-left: 16px;
+}
+
+.brand__text {
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 700;
+}
+
+.brand__fashion {
+    color:#F16D7F;
+    ;
 }
