@@ -1,60 +1,244 @@
-@font-face {
-    font-family: Montserrat;
-    src: url('fonts/montserrat-light.eot');
-    src: url('fonts/montserrat-light.eot?#iefix') format('embedded-opentype'),
-         url('fonts/montserrat-light.woff2') format('woff2'),
-         url('fonts/montserrat-light.woff') format('woff');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat' , sans-serif;
+    font-size: 14px;
     font-weight: 300;
-    font-style: normal;
+    line-height: 17px;
 }
 
-@font-face {
-    font-family: Montserrat;
-    src: url('fonts/montserrat-regular.eot');
-    src: url('fonts/montserrat-regular.eot?#iefix') format('embedded-opentype'),
-         url('fonts/montserrat-regular.woff2') format('woff2'),
-         url('fonts/montserrat-regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
 }
 
-@font-face {
-    font-family: Roboto;
-    src: url('fonts/roboto-regular.eot');
-    src: url('fonts/roboto-regular.eot?#iefix') format('embedded-opentype'),
-         url('fonts/roboto-regular.woff2') format('woff2'),
-         url('fonts/roboto-regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+.header {
+    background-image: url(images/bg_header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: #ffffff;
 }
 
-@font-face {
-    font-family: Raleway;
-    src: url('fonts/Raleway-SemiBold.eot');
-    src: url('fonts/Raleway-SemiBold.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Raleway-SemiBold.woff2') format('woff2'),
-        url('fonts/Raleway-SemiBold.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
+.header__wrapper {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0 0;
+    margin-bottom: 300px;
 }
 
-@font-face {
-    font-family: Raleway;
-    src: url('fonts/Raleway-Medium.eot');
-    src: url('fonts/Raleway-Medium.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Raleway-Medium.woff2') format('woff2'),
-        url('fonts/Raleway-Medium.woff') format('woff');
+.header__logo {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.header__icon_text:hover {
+    color: #C7B299;
+}
+
+.header__icon_text {
+    font-family: 'Raleway' , sans-serif;
+    font-size: 34px;
+    line-height: 40px;
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+}
+
+.header__link {
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 24px;
+}
+
+.header__link:hover {
+    color: #C7B299;
+}
+
+.header__content {
+    display: flex;
+    max-width: 1500px;
+    margin: 0 auto 260px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.header__portfolio {
+    width: 570px;
+}
+
+.header__title {
+    font-family: 'Raleway', sans-serif;
     font-weight: 500;
-    font-style: normal;
+    font-size: 36px;
+    line-height: 42px;
 }
 
-@font-face {
-    font-family: Raleway;
-    src: url('fonts/Raleway-Regular.eot');
-    src: url('fonts/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Raleway-Regular.woff2') format('woff2'),
-        url('fonts/Raleway-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+.header__psd {
+    font-family: 'Raleway', sans-serif;
+    font-size: 52px;
+    line-height: 61px;
+    margin-bottom: 4px;
+    letter-spacing: 0.6px;
 }
 
+.header__text {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.header__button {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 19px 40px;
+    background-color: #988574;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.header__button:hover {
+    background-color: #654646;
+}
+
+.header__slider {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.header__slider_circle {
+    margin-right: 7px;
+}
+
+.header__slider_circle:hover {
+    opacity: 0.0;
+}
+
+.cards {
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 87px;
+}
+
+.card {
+    width: 265px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards__image {
+    margin-bottom: 30px;
+}
+
+.cards__header {
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+.cards__text {
+    margin-bottom: 20px;
+}
+
+.line {
+    border: 3px #F1EEE9 solid;
+    width: 70px;
+}
+
+.card:hover .cards__header {
+    color: #C7B299;
+}
+
+.card:hover .another_color {
+    fill: #C7B299;
+}
+
+.card:hover .line {
+    border: 3px #C7B199 solid;
+}
+
+.realization {
+    background-color: #E5E5E5;
+}
+
+.realization__wrapper {
+    padding-top: 88px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.realization__title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+    color: #555555;
+    margin-bottom: 12px;
+}
+
+.realization__text {
+    font-size: 16px;
+    line-height: 20px;
+    color: #8C8C8C;
+    width: 770px;
+    margin-bottom: 42px;
+}
+
+.wordpress {
+   background: radial-gradient(94.87% 15543.47% at 4.58% 100%, #211B19 0%, #4E3326 100%);
+   padding-top: 44px;
+   padding-bottom: 44px;
+}
+
+.wordpress__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wordpress__title {
+    font-family: 'Raleway';
+    font-size: 28px;
+    line-height: 33px;
+    color: #fff;
+    margin-bottom: 6px;
+}
+
+.wordpress__waxom {
+    color: #C7B299;
+}
+
+.wordpress__text {
+    font-size: 18px;
+    line-height: 22px;
+    color: #615855;
+}
+
+.wordpress__link {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 19px 32px;
+    background-color: #988574;
+    border-radius: 2px;
+}
+
+.wordpress__link:hover {
+    background-color: #654646;
+}
