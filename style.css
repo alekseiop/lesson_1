@@ -229,10 +229,13 @@ body {
 }
 
 .wordpress__link {
+    display: flex;
+    align-items: center;
     text-decoration: none;
     color: #fff;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
+    line-height: 17px;
     text-transform: uppercase;
     padding: 19px 32px;
     background-color: #988574;
