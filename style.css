@@ -69,6 +69,10 @@ body {
     justify-content: space-between;
 }
 
+.header__content_link {
+    padding-top: 36px;
+}
+
 .header__content_link:hover .header__content_img {
    opacity: 0.3;
 }
@@ -201,6 +205,10 @@ body {
     color: #8C8C8C;
     width: 770px;
     margin-bottom: 42px;
+}
+
+.realization__image {
+    width: 100%;
 }
 
 .wordpress {
@@ -816,4 +824,71 @@ body {
 
 .copy__link:hover {
     color: #BAA78F;
+}
+
+@media (max-width: 1024px) {
+
+    .container {
+        padding: 0 30px;
+    }
+    
+    .header__wrapper {
+        margin-bottom: 250px;
+    }
+
+    .header__content {
+        padding: 0 15px;
+    }
+
+   
+
+    .wordpress {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .mobile__text {
+        width: auto;
+    }
+
+    .recent__cards {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .recent__card {
+        margin-bottom: 15px;
+    }
+
+    .adaptiv {
+        position: absolute;
+        bottom: 114px;
+    }
+
+    .partners__icons {
+        width: auto;
+    }
+
+    .partners__icons > img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .footer__wrapper {
+        flex-wrap: wrap;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .footer__widget {
+        margin-right: 49px;
+    }
+
+    .footer__waxom, .footer__twitter {
+        margin-left: 49px;
+    }
+
+    .footer__waxom {
+        margin-top: 33px;
+    }
 }
