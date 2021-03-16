@@ -51,10 +51,15 @@ body {
     align-items: center;
 }
 
+.header__adaptive, #header__widget {
+    display: none;
+}
+
 .header__link {
     text-decoration: none;
     color: #ffffff;
     margin-right: 24px;
+    display: block;
 }
 
 .header__link:hover {
@@ -890,5 +895,247 @@ body {
 
     .footer__waxom {
         margin-top: 33px;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .header {
+        position: relative;
+    }
+
+    .header__content {
+       display: flex;
+       justify-content: center;
+    }
+    .header__slider {
+        position: absolute;
+        top: 635px;
+        left: 148px;
+    }
+
+    .header__wrapper {
+        margin-bottom: 0;
+    }
+
+    .header__logo {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .header__icon {
+        width: 40px;
+        height: 27px;
+    }
+
+    .header__icon_text {
+        font-size: 24px;
+    }
+
+    .header__burger {
+        width: 100%;
+    }
+
+    .header__menu {
+        display: flex;
+        flex-direction: column;
+        visibility: hidden;
+    }
+
+    .header__adaptive {
+        display: block;
+        text-align: right;
+    }
+
+    .header__link {
+        margin-right: 0;
+        margin-bottom: 7px;
+    }
+
+    #header__widget:checked ~ .header__menu {
+       visibility: visible;
+    }
+
+    .header__link:hover {
+       color: #e0dddd;
+       opacity: 0.6;
+    }
+
+    .header__content_link {
+        display: none;
+    }
+
+    .header__title {
+        font-size: 26px;
+    }
+
+    .header__psd {
+        font-size: 40px;
+        line-height: 44px;
+    }
+
+    .header__text {
+        font-size: 14px;
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .card {
+        width: auto;
+        margin-bottom: 8px;
+    }
+
+    .realization__text {
+        width: auto;
+        font-size: 14px;
+    }
+
+    .realization__title {
+        font-size: 26px;
+    }
+
+    .wordpress__content {
+        align-items: center;
+    }
+
+    .wordpress__title {
+        font-size: 26px;
+    }
+
+    .wordpress__text {
+        font-size: 14px;
+    }
+
+    .wordpress__link {
+        padding: 10px 20px;
+        height: 50px;
+        margin-left: 20px;
+    }
+
+    .project__title {
+        font-size: 26px;
+    }
+
+    .project__text {
+        width: auto;
+        font-size: 14px;
+    }
+
+    .project__links {
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .project__link {
+        margin-bottom: 10px;
+    }
+
+    .project__img {
+        max-width: 315px;
+    }
+
+    .project__cards {
+        justify-content: center;
+    }
+
+    .project__cards_title {
+        font-size: 18px;
+    }
+
+    .project__card {
+        margin-bottom: 20px;
+    }
+
+    .adaptiv {
+        top: 196px;
+    }
+
+    .video__title {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .video__text {
+        width: auto;
+    }
+
+    .mobile__content {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    
+    .mobile__descr {
+        margin-top: 30px;
+    }
+
+    .mobile__title {
+        font-size: 26px;
+    }
+
+    .mobile__text {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    .mobile__list {
+        margin-left: 0;
+    }
+
+    .mobile__item {
+        font-size: 14px;
+    }
+
+    .counters__wrapper {
+        flex-direction: column;
+    }
+
+    .counters__card {
+        margin-bottom: 15px;
+    }
+
+    .recent__wrapper {
+        margin-top: 50px;
+    }
+
+    .recent__title {
+        font-size: 26px;
+    }
+
+    .recent__text {
+        width: auto;
+        font-size: 14px;
+    }
+
+    .partners__icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .partners {
+        padding: 40px 0;
+    }
+
+    .footer {
+        padding-top: 30px;
+    }
+
+    .footer__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__waxom, .footer__twitter {
+        margin-left: 0;
+    }
+
+    .footer__waxom_title {
+        font-size: 26px;
     }
 }
