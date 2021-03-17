@@ -15,7 +15,7 @@ body {
 }
 
 .header {
-    background-image: url(images/bg_header.png);
+    background-image: url(../images/bg_header.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -391,7 +391,7 @@ body {
 }
 
 .video {
-    background-image: url(images/bg_video_presentation.png);
+    background-image: url(../images/bg_video_presentation.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 700px;
@@ -630,7 +630,7 @@ body {
 }
 
 .partners {
-    background-image: url(images/partners.png);
+    background-image: url(../images/partners.png);
     padding: 140px 0;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1096,8 +1096,6 @@ body {
     .counters__card {
         margin-bottom: 15px;
     }
-
-    
 
     .recent__wrapper {
         margin-top: 50px;
