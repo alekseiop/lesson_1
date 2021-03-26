@@ -565,7 +565,7 @@ body {
 }
 
 .mobile__item::before {
-  content: url(images/arrow.svg);
+  content: url(../images/arrow.svg);
   margin-right: 8px;
 }
 
